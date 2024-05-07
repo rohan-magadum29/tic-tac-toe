@@ -1,0 +1,85 @@
+body{
+  background-color: black;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+  color:white;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+#react-title{
+  color: cyan;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.board{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  padding: 2px;
+  border-radius: 15px;
+  color: white;
+  font-size: 2rem;
+  width: fit-content;
+}
+#turn-title {
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 2.5rem;
+}
+.row
+{
+  display: flex;
+  margin: auto;
+}
+.box {
+  position: relative;
+  text-align: center;
+  margin: 7px;
+  height: 100px;
+  width: 100px;
+  background-color:	#00e1f6;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.winning-box{
+  background-color:	#0099a7;
+}
+.box:hover .hover-text {
+  opacity: 0.7; /* Adjust the opacity as needed */
+}
+
+.hover-text {
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#reset{
+  margin: 40px 20px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:#0099a7;
+  color: white;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  border: 1px rgb(255, 255, 255) solid;
+}
